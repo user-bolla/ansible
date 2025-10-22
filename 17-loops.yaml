@@ -5,8 +5,8 @@
   tasks:
   - name: print names
     ansible.builtin.package:
-      name: "{{item.dict1.name}}"
-      state: "{{item.dict1.state}}"
+      name: "{{item.name}}"
+      state: "{{item.state}}"
 
     loop:
 
