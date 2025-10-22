@@ -6,8 +6,8 @@
     DURATION: 120
     TRAINER: Siva
   tasks:
-    - name: print the course info
-      vars:
-       COURSE: ansible
-       ansible.builtin.debug:
-        msg: "Course name is : {{ COURSE}}, Duration: {{DURATION}}, Trainer: {{TRAINER}}"
+  - name: print the course info
+    vars:
+      COURSE: ansible
+    ansible.builtin.debug:
+      msg: "Course name is : {{ COURSE}}, Duration: {{DURATION}}, Trainer: {{TRAINER}}"
