@@ -1,0 +1,6 @@
+- name: ping th server
+  hosts: frontend # which server you are connecting
+
+  tasks:
+  - name: ping
+    ansible.builtin.ping:
