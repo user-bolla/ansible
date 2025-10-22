@@ -10,14 +10,14 @@
 
     loop:
     - dict1:
-      name: "nginx"
-      state: "present"
+        - name: "nginx"
+        - state: "present"
     - dict2:
-      name: "mysql"
-      state: "present"
+        - name: "mysql"
+        - state: "present"
     - dict3:
-      name: "zip"
-      state: "present"
+        - name: "zip"
+        - state: "present"
     # - {name: "nginx", state: "absent"}
     # - { name: "mysql", state: "absent"}
     # - { name: "zip", state: "latest"}
