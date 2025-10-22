@@ -6,3 +6,10 @@
     ansible.builtin.debug:
       msg: "Hello {{item}}"
     loop: ["sriman" ,"srija" , "sriram" ]
+    # loop:
+    # - Raju
+    # - Ravi
+    # - Rani
+    # - Srija
+    # - Sriman
+    # - Sriram
