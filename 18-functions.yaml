@@ -3,7 +3,7 @@
   connection: local
   vars:
     technologies: DevOps, Linux, Shell, Ansible # string
-    name: "Sivakumar reddy M"
+    # name: "Sivakumar reddy M"
     gmail: Info@GMAIL.COM
     ipaddress: "19222.168.0.1"
     # dictionary == map
