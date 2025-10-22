@@ -5,10 +5,19 @@
   tasks:
   - name: print names
     ansible.builtin.package:
-      name: "{{item.name}}"
-      state: "{{item.state}}"
+      name: "{{item.dict1.name}}"
+      state: "{{item.dict1.state}}"
 
     loop:
-    - {name: "nginx", state: "absent"}
-    - { name: "mysql", state: "absent"}
-    - { name: "zip", state: "latest"}
+    - dict1:
+      name: "nginx"
+      state: "present"
+    - dict2:
+      name: "mysql"
+      state: "present"
+    - dict3:
+      name: "zip"
+      state: "present"
+    # - {name: "nginx", state: "absent"}
+    # - { name: "mysql", state: "absent"}
+    # - { name: "zip", state: "latest"}
